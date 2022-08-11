@@ -1,0 +1,189 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&family=Roboto:wght@300;500&display=swap');
+
+/* cor 1 - #1D6B20
+cor 2 - #88EE8B
+cor 3 - #40EB45
+cor 4 - #3D6B3F
+cor 5 - #32B836
+*/
+
+:root{
+    --cor1: #1D6B20;
+    --cor2: #88EE8B;
+    --cor3: #40EB45;
+    --cor4: #3D6B3F;
+    --cor5: #32B836; /* var(--cor1)*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Beau Rivage', cursive;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(green-blur-gradient-8k-8l.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background-color: #3D6B3F;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 10px;
+    background-color: #88ee8b;
+    border-radius: 10px;
+}
+
+header{
+    min-height: 30px;
+    padding: 40px;
+    font-size: 30px;
+    animation: changeBackground 5s infinite alternate linear;
+    background-color: var(--cor1);
+    text-align: center;
+    text-shadow: 1px 2px 2px black;
+    color: var(--cor1);
+}
+
+@keyframes changeBackground{
+    0%{
+        background-color: var(--cor5);
+    }
+    25%{
+        background-color: var(--cor4);
+    }
+    50%{
+        background-color: var(--cor3);
+    }
+    75%{
+        background-color: var(--cor2);
+    }
+    100%{
+        background-color: var(--cor1);
+    }
+}
+
+a{
+    font-size: 25px;
+    margin-right: 20px;
+    text-shadow: 1px 2px 4px black;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    color: var(--cor1);
+    transition: 0.5s;
+}
+
+a:hover{
+    font-size: 30px;
+    color: var(--cor2);
+    padding: 10px;
+    background-color: var(--cor4);
+    transition: 0.5s;
+}
+
+
+nav{
+    background-color: var(--cor3);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 7px var(--cor2);
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    min-width: 320px;
+    max-width: 1000px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 4px 4px 20px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2{
+    color: var(--cor1);
+    font-size: 40px;
+    margin: 15px;
+    background-image: linear-gradient(to left, var(--cor1), var(--cor2));
+}
+
+p{
+    text-align: justify;
+    margin-top: 30px;
+    text-indent: 40px;
+}
+
+ul{
+    list-style-position: inside;
+    text-align: justify;
+}
+
+iframe{
+    border-style: solid;
+    border-radius: 20px;
+    margin: 30px 0px;
+    box-shadow: 6px 6px 20px var(--cor5);
+}
+
+pre{
+    font-size: 20px;
+    font-family: 'Beau Rivage', cursive;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+img{
+    box-shadow: 4px 4px 10px black;
+    border-radius: 10px;
+    margin: 30px 0px;
+}
+
+footer{
+    font-size: 14px;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--cor3);
+}
+
+#text2{
+    text-align: center;
+}
+
+figcaption{
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+aside{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+h3{
+    background-color: var(--cor3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+    margin: -15px -10px 0px -10px;
+}
+
+/*código pessoal do jão*/
+
+/*body{
+    
+    text-align: center;
+    background-image: linear-gradient(to left, #1d6b20, #88ee8b);
+}
+
